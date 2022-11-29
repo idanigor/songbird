@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/favicon.png" type="image/x-icon">
+	<link rel="icon" href="img/favicon.svg" type="image/x-icon">
+
+	<title>Songbird</title>
+</head>
+
+<body>
+	<div class="page">
+		<header class="header">
+
+			<div class="logo-container">
+				<div class="logo"></div>
+				<h1>Songbird</h1>
+			</div>
+			<nav class="nav">
+				<ul class="nav-list">
+					<li id="nav-start" class="nav-item active">Старт</li>
+					<li id="nav-quiz" class="nav-item">Викторина</li>
+					<li id="nav-result" class="nav-item">Результаты</li>
+					<li id="nav-gallery" class="nav-item">Галерея</li>
+				</ul>
+			</nav>
+
+		</header>
+		<main class="main">
+			<section class="start">
+				<div class="start-wrapper">
+					<h2 class="start-title">Songbird</h2>
+					<p class="start-text">Приложение-викторина для распознавания птиц по их голосам</p>
+					<button class="button button-start">Перейти к викторине</button>
+				</div>
+			</section>
+
+			<section class="quiz hidden">
+				<div class="quiz-wrapper">
+
+					<ul class="birds-type-list">
+						<li class="birds-type-item active">Разминка</li>
+						<li class="birds-type-item">Воробьиные</li>
+						<li class="birds-type-item">Лесные птицы</li>
+						<li class="birds-type-item">Певчие птицы</li>
+						<li class="birds-type-item">Хищные птицы</li>
+						<li class="birds-type-item">Морские птицы</li>
+					</ul>
+
+					<div class="question-container">
+						<div class="question-img"></div>
+						<div class="player-container">
+							<div class="question-name-container">
+								<span class="question-name">***</span>
+								<span class="counter">Score: <span class="score">0</span> / 30</span>
+							</div>
+							<div class="question-player">
+								<button class="play player-icon"></button>
+								<div class="player">
+									<div class="duration">
+										<div class="progress" style="width: 0%;"></div>
+									</div>
+									<div class="player-box">
+										<div class="time-container">
+											<span class="time-progress">00:00</span>
+											<span>/</span>
+											<span class="time-duration">00:00</span>
+										</div>
+										<div class="volume-container">
+											<button class="mute mute-mini"></button>
+											<div class="volume-duration">
+												<div class="volume-progress" style="width: 100%;"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="response-container">
+
+						<ul class="response-list">
+							<li id="res-1" class="response-item"></li>
+							<li id="res-2" class="response-item"></li>
+							<li id="res-3" class="response-item"></li>
+							<li id="res-4" class="response-item"></li>
+							<li id="res-5" class="response-item"></li>
+							<li id="res-6" class="response-item"></li>
+						</ul>
+
+						<div class="response-bird">
+							<div class="response-wrapper">
+								<div class="response-img"></div>
+								<div class="bird-container">
+									<p class="response-name"></p>
+									<p class="response-subname"></p>
+									<div class="response-player">
+										<button class="play player-icon"></button>
+										<div class="player">
+											<div class="duration">
+												<div class="progress" style="width: 0%;"></div>
+											</div>
+											<div class="player-box">
+												<div class="time-container">
+													<span class="time-progress">00:00</span>
+													<span>/</span>
+													<span class="time-duration">00:00</span>
+												</div>
+												<div class="volume-container">
+													<button class="mute mute-mini"></button>
+													<div class="volume-duration">
+														<div class="volume-progress" style="width: 100%;"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<p class="response-text">
+							</p>
+							<div class="report">Послушайте плеер и 
+							выберите птицу из списка чей голос прозвучал</div>
+						</div>
+					</div>
+
+					<button class="button button-next passive">Далее</button>
+				</div>
+			</section>
+
+			<section class="result hidden">
+				<div class="result-wrapper">
+					<h2 class="result-title">Результаты</h2>
+					<div class="result-container-full hidden">
+						<p class="result-text-full">Поздравляю! Вы набрали максимальный балл и завершили викторину!</p>
+						<button class="button button-result-full">Получить приз</button>
+					</div>
+					<div class="result-container-win hidden">
+						<p class="result-text-win">По итогам викторины Вы набрали <span class="result-score-win">0</span> из 30 баллов</p>
+						<button class="button button-result-win">Пройти заново</button>
+					</div>
+					<div class="result-container-action">
+							<p class="result-text-action">Викториа в процессе, текущее количество баллов <span class="result-score-action">0</span>
+								из 30</p>
+							<button class="button button-result-action">Продолжить викторину</button>
+					</div>
+				
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+
+			<a href="https://github.com/idanigor/" class="github"></a>
+			<span class="age">2022</span>
+			<a href="https://rs.school/js/" class="rs-school"></a>
+
+		</footer>
+	</div>
+
+</body>
+
+</html>
